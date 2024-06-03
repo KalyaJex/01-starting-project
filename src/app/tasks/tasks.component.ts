@@ -29,4 +29,8 @@ export class TasksComponent {
   onStartAddTask() {
     this.isAddingTask = true;
   }
+
+  onClickBackdrop() {
+    this.isAddingTask = false;
+  }
 }
