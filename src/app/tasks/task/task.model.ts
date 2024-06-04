@@ -5,3 +5,7 @@ export interface Task {
   summary: string;
   dueDate: string;
 }
+
+export type NewTask = Pick<Task, 'title' | 'summary'> & {
+  date: string;
+};
